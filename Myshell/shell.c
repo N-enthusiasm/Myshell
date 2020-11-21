@@ -103,7 +103,7 @@ int main()
 				execvp("./mv",MyArgv);
 			else
 				printf("Sorry,we haven't implement what you want.\n");*/
-			char * envp[]={"PATH=/home/nmy/桌面/Myshell",NULL};
+			char * envp[]={"PATH=./",NULL};
 			execve(MyArgv[0],MyArgv,envp);
 			exit(0);
 		}	
